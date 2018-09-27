@@ -1,0 +1,9 @@
+Package: om-hello-world
+Type: Package
+Title: Template outsider module
+Version: 0.0.0
+Author: D.J. Bennett
+Maintainer: D.J. Bennett <dominic.john.bennett@gmail.com>
+Description: Template outsider module.
+Encoding: UTF-8
+LazyData: true
