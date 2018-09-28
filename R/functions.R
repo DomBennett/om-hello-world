@@ -1,4 +1,4 @@
-pckgnm <- environmentName(env = environment())
+pkgnm <- environmentName(env = environment())
 
 #' @name hello_world
 #' @title Say hello!
@@ -7,7 +7,7 @@ pckgnm <- environmentName(env = environment())
 #' @return Logical
 #' @export
 hello_world <- function(...) {
-  ids <- outsider:::ids_get(pckgnm = pckgnm)
+  ids <- outsider:::ids_get(pkgnm = pkgnm)
   # launch container
   outsider:::docker_start(cntnr_id = ids[['cntnr_id']],
                           img_id = ids[['img_id']])
