@@ -4,14 +4,11 @@
 \alias{hello_world}
 \title{Say hello!}
 \usage{
-hello_world(...)
-}
-\arguments{
-\item{...}{Additional things to say, character.}
+hello_world()
 }
 \value{
 Logical
 }
 \description{
-Run \code{echo "Hello World!"} in Ubuntu 16.04.
+Run \code{echo "Hello World!"} in Ubuntu 18.04.
 }

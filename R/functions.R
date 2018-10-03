@@ -2,18 +2,10 @@ pkgnm <- environmentName(env = environment())
 
 #' @name hello_world
 #' @title Say hello!
-#' @description Run \code{echo "Hello World!"} in Ubuntu 16.04.
-#' @param ... Additional things to say, character.
+#' @description Run \code{echo "Hello World!"} in Ubuntu 18.04.
 #' @return Logical
 #' @export
-hello_world <- function(...) {
-  ids <- outsider:::ids_get(pkgnm = pkgnm)
-  # launch container
-  outsider:::docker_start(cntnr_id = ids[['cntnr_id']],
-                          img_id = ids[['img_id']])
-  on.exit(outsider:::docker_stop(cntnr_id = ids[['cntnr_id']]))
-  # run command
-  invisible(outsider:::docker_exec(cntnr_id = ids[['cntnr_id']], 'echo',
-                                   'Hello World!', ...))
+hello_world <- function() {
+  outsider::.run(pkgnm = pkgnm, files_to_send = NULL, 'echo', 'Hello World!',
+                 'This is ....\n', 'lsb_release', '-idrc')
 }
-
