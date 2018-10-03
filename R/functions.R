@@ -6,15 +6,5 @@ pkgnm <- environmentName(env = environment())
 #' @return Logical
 #' @export
 hello_world <- function() {
-  outsider::.run(pkgnm = pkgnm, files_to_send = NULL, 'echo', 'Hello World!',
-                 'This is ....\n', 'lsb_release', '-idrc')
-}
-
-#' @name system_info
-#' @title Fetch system information
-#' @description Fetch the system information of the outsider module.
-#' @return Logical
-#' @export
-system_info <- function() {
-  outsider::.run(pkgnm = pkgnm, files_to_send = NULL, 'uname', '-a')
+  outsider::.run(pkgnm = pkgnm, files_to_send = NULL, 'echo', 'Hello World!')
 }
