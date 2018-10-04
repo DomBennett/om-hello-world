@@ -12,3 +12,9 @@ Logical
 \description{
 Run \code{echo "Hello World!"} in Ubuntu 18.04.
 }
+\examples{
+library(outsider)
+hello_world <- module_import('hello_world',
+                             repo = 'dombennett/om..hello.world..1.0')
+hello_world()
+}
