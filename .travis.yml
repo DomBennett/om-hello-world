@@ -1,11 +1,18 @@
 language: r
+latex: false
+fortran: false
+pandoc: false
 
 warnings_are_errors: true
-r_check_args: --as-cran
 sudo: required
 
 services:
   - docker
+
+addons:
+  apt:
+    packages:
+      - libapparmor-dev
   
 r_github_packages:
   - antonellilab/outsider
