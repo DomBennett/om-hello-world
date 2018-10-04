@@ -7,6 +7,4 @@ RUN echo "Hello world!" > hello.txt && \
 # outsider requires working_dir
 RUN mkdir /working_dir
 
-RUN mv hello.txt /working_dir/.
-
 WORKDIR /working_dir
