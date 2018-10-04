@@ -10,5 +10,5 @@ services:
 r_github_packages:
   - antonellilab/outsider
   
-after_success:
+script:
   - Rscript -e 'outsider::module_test(repo = "DomBennett/om..hello.world..1.0")'
