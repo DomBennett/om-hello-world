@@ -7,5 +7,5 @@ pkgnm <- environmentName(env = environment())
 #' @example examples/hello_world.R
 #' @export
 hello_world <- function() {
-  outsider::.run(pkgnm = pkgnm, files_to_send = NULL, 'cat', '../hello.txt')
+  outsider::.run(pkgnm = pkgnm, cmd = 'cat', args = '../hello.txt')
 }
