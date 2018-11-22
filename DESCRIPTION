@@ -1,4 +1,4 @@
-Package: om..hello.world..1.0..dombennett
+Package: om..hello.world..dombennett
 Type: Package
 Title: Say hello to the world!
 Author: Dom Bennett
@@ -8,7 +8,7 @@ License: MIT + file LICENSE
 Version: 1.0.0
 Encoding: UTF-8
 RoxygenNote: 6.1.0
-BugReports: https://github.com/dombennett/om..hello.world..1.0/issues
+BugReports: https://github.com/dombennett/om..hello.world/issues
 Depends:
     R (>= 3.3.0)
 Imports:
