@@ -3,6 +3,8 @@ Type: Package
 Title: Say hello to the world!
 Author: Dom Bennett
 Maintainer: Dom Bennett <dominic.john.bennett@gmail.com>
+GitHub: dombennett
+Docker: dombennett
 Description: Template outsider module for demonstrating and testing purposes.
 License: MIT + file LICENSE
 Version: 1.0.0
