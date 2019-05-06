@@ -13,3 +13,5 @@ Depends:
     R (>= 3.3.0)
 Imports:
     outsider.base
+Suggests:
+    outsider

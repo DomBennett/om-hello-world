@@ -6,7 +6,7 @@
 #' @export
 #' @export
 hello_world <- function() {
-  otsdr <- outsider_init(repo = 'dombennett/om..hello.world',
+  otsdr <- outsider_init(pkgnm = 'om..hello.world',
                          cmd = 'cat', arglist = '../hello.txt')
   run(otsdr)
 }
