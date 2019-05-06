@@ -4,8 +4,9 @@
 #' @return Logical
 #' @example examples/hello_world.R
 #' @export
+#' @export
 hello_world <- function() {
-  otsdr <- outsider::.outsider_init(repo = 'dombennett/om..hello.world',
-                                    cmd = 'cat', arglist = '../hello.txt')
-  outsider::.run(otsdr)
+  otsdr <- outsider_init(repo = 'dombennett/om..hello.world',
+                         cmd = 'cat', arglist = '../hello.txt')
+  run(otsdr)
 }
