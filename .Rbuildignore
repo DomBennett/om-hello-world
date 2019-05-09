@@ -1,6 +1,3 @@
 ^.*\.Rproj$
 ^\.Rproj\.user$
-Dockerfile
-om.yml
-.travis.yml
-
+^.travis.yml$
