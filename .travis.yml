@@ -1,3 +1,4 @@
+
 language: r
 latex: false
 fortran: false
@@ -15,7 +16,10 @@ addons:
       - libapparmor-dev
   
 r_github_packages:
+  - antonellilab/outsider.base
   - antonellilab/outsider
+  - antonellilab/outsider.devtools
   
 script:
-  - Rscript -e 'outsider::.module_test(repo = "DomBennett/om..hello.world")'
+  - Rscript -e 'outsider.devtools::module_test(getwd())'
+
